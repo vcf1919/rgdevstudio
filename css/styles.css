@@ -523,11 +523,23 @@ body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-a
 /* ---------- Sobre mí ---------- */
 .about-grid { display: grid; gap: clamp(40px, 6vw, 96px); align-items: center; }
 @media (min-width: 900px) { .about-grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
-.about-photo { max-width: 460px; width: 100%; }
-.about-photo img, .photo-placeholder { width: 100%; aspect-ratio: 4 / 5; max-width: 100%; border-radius: 28px; object-fit: cover; }
-.photo-placeholder { display: grid; place-items: center; align-content: center; gap: 8px; background: radial-gradient(80% 60% at 50% 35%, #FF7A3D, #B8360A); color: var(--on-accent); }
-.photo-placeholder span { font-family: var(--serif); font-style: italic; font-size: clamp(5rem, 14vw, 8rem); line-height: 1; }
-.photo-placeholder small { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; opacity: .75; }
+/* Tarjeta de compromisos (en lugar de foto) */
+.about-card {
+  position: relative; overflow: hidden; display: grid; gap: 28px; max-width: 480px; width: 100%;
+  padding: clamp(28px, 4vw, 44px); border-radius: 28px; color: var(--on-accent);
+  background: radial-gradient(120% 90% at 20% 0%, #FF8A52, var(--accent) 55%, #E24E17 100%);
+}
+.about-card-mono {
+  position: absolute; right: -0.06em; top: -0.2em; pointer-events: none;
+  font-family: var(--serif); font-style: italic; font-size: clamp(12rem, 26vw, 18rem); line-height: 1; color: rgba(18,18,20,.12);
+}
+.about-card-list { position: relative; display: grid; gap: 20px; }
+.about-card-list li { display: grid; gap: 2px; padding-top: 18px; border-top: 1px solid rgba(18,18,20,.2); }
+.about-card-list li:first-child { border-top: 0; padding-top: 0; }
+.about-card-list b { font-size: 1.25rem; font-weight: 800; text-transform: uppercase; letter-spacing: -0.01em; font-variation-settings: "wdth" 75; }
+.about-card-list span { color: rgba(18,18,20,.86); }
+@media (max-width: 899px) { .about-card { order: 2; } }
+.about-card-sign { position: relative; font-family: var(--serif); font-style: italic; font-size: 1.25rem; }
 .about-text { display: grid; gap: 22px; min-width: 0; }
 .about-lead { font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.75rem); line-height: 1.35; letter-spacing: -0.01em; max-width: 34ch; font-weight: 500; }
 .about-body { color: var(--muted); max-width: 52ch; }

@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>rgdevstudio · Diseño web a medida para negocios</title>
+  <meta name="description" content="Diseño y desarrollo landings y tiendas online en Shopify a medida para pequeños negocios y comercios locales. Sin plantillas, webs rápidas y trato directo conmigo.">
+  <meta name="theme-color" content="#ECEAE4">
+  <!-- CAMBIAR: dominio definitivo -->
+  <link rel="canonical" href="https://rgdevstudio.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="rgdevstudio">
+  <meta property="og:title" content="rgdevstudio · Tu negocio merece una web que esté a su altura">
+  <meta property="og:description" content="Landings y tiendas online en Shopify a medida, sin plantillas y hablando siempre conmigo.">
+  <meta property="og:url" content="https://rgdevstudio.netlify.app/">
+  <meta property="og:image" content="https://rgdevstudio.netlify.app/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+
+  <!-- Archivo (eje de anchura: condensada para titulares, normal para texto) + Newsreader cursiva para acentos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap">
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "rgdevstudio",
+    "description": "Diseño y desarrollo de landings y tiendas online en Shopify a medida para pequeños negocios y comercios locales.",
+    "url": "https://rgdevstudio.netlify.app/",
+    "image": "https://rgdevstudio.netlify.app/img/og-image.png",
+    "email": "[tu-email]",
+    "telephone": "[+34 600 000 000]",
+    "areaServed": { "@type": "Country", "name": "España" },
+    "founder": { "@type": "Person", "name": "[tu nombre]", "jobTitle": "Diseñador y desarrollador web" },
+    "knowsLanguage": "es",
+    "sameAs": ["https://instagram.com/[tu-usuario]"]
+  }
+  </script>
+
+  <!-- Sin librerías: todo el 3D es CSS y el movimiento, JS propio -->
+  <script src="/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ============ ESCENA 3D: el móvil que viaja por la página ============ -->
+  <div class="stage" aria-hidden="true">
+    <div class="phone-glow"></div>
+    <div class="phone-shadow"></div>
+    <div class="phone">
+      <div class="phone-body">
+        <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i>
+      </div>
+      <div class="phone-back">
+        <span class="camera"><i></i><i></i><i></i><b></b></span>
+        <span class="back-mono">rg</span>
+        <span class="back-text">rgdevstudio</span>
+      </div>
+      <div class="phone-front">
+        <div class="phone-screen">
+          <!-- Las pantallas de los proyectos se clonan aquí desde JS -->
+          <div class="screen screen--svc screen--landing" data-screen-id="svc-landing">
+            <div class="screen-scroll">
+              <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+              <div class="sv-nav"><b>Tu negocio</b><span class="burger"><i></i><i></i></span></div>
+              <div class="sv-hero"><p class="sv-eyebrow">Abierto hoy · 9:00 – 20:00</p><p class="sv-h">Lo que haces, explicado en una frase.</p><span class="sv-btn">Pide cita</span></div>
+              <div class="sv-cards"><span><b>Servicio 1</b><i></i><i></i></span><span><b>Servicio 2</b><i></i><i></i></span></div>
+              <div class="sv-quote">“Me contactan cada semana desde la web.”</div>
+              <div class="sv-cta"><b>¿Hablamos?</b><span>WhatsApp</span><span>Llamar</span></div>
+            </div>
+          </div>
+          <div class="screen screen--svc screen--shop" data-screen-id="svc-tienda">
+            <div class="screen-scroll">
+              <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+              <div class="sh-head"><span class="sh-back">‹</span><b>Tu cesta</b><span class="sh-count">2</span></div>
+              <div class="sh-item"><i style="--c1:#F4B8C4;--c2:#E2486B"></i><span><b>Ramo Primavera</b><small>Entrega hoy</small></span><em>35 €</em></div>
+              <div class="sh-item"><i style="--c1:#F9D98B;--c2:#F2B33D"></i><span><b>Girasoles</b><small>Entrega hoy</small></span><em>29 €</em></div>
+              <div class="sh-sum"><span>Envío</span><b>Gratis</b></div>
+              <div class="sh-sum sh-sum--total"><span>Total</span><b>64,00 €</b></div>
+              <div class="sh-pay"><span class="sh-pay-btn">Pagar ahora</span><p>Pago seguro con tarjeta o Bizum</p></div>
+              <div class="sh-toast"><i></i>Pedido recibido</div>
+            </div>
+          </div>
+          <div class="screen screen--svc screen--care" data-screen-id="svc-mant">
+            <div class="screen-scroll">
+              <div class="sb sb--light"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+              <div class="ca-head"><small>Estado de tu web</small><b>Todo en orden</b></div>
+              <div class="ca-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="50"/><circle class="ca-arc" cx="60" cy="60" r="50"/></svg><span><b>99,9 %</b><small>en línea</small></span></div>
+              <div class="ca-stats"><span><small>Carga</small><b>0,8 s</b></span><span><small>Seguridad</small><b>SSL ✓</b></span></div>
+              <ul class="ca-log">
+                <li><i></i><span><b>Cambio de horario</b><small>Hecho en 2 h</small></span></li>
+                <li><i></i><span><b>Copia de seguridad</b><small>Hoy, 03:00</small></span></li>
+                <li><i></i><span><b>Actualizaciones</b><small>Al día</small></span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="screen screen--chat" data-screen-id="chat">
+            <div class="screen-scroll">
+              <div class="sb sb--dark"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+              <div class="chat-head">
+                <span class="chat-avatar">rg</span>
+                <span class="chat-who"><b>rgdevstudio</b><small>en línea</small></span>
+              </div>
+              <div class="chat-body">
+                <p class="chat-day">Hoy</p>
+                <p class="bubble bubble--me" style="--d:0">Hola, tengo una floristería y quiero vender online.</p>
+                <p class="bubble bubble--me" style="--d:1">¿Cuánto costaría una tienda?</p>
+                <p class="typing" style="--d:2"><i></i><i></i><i></i></p>
+                <p class="bubble bubble--them" style="--d:3">¡Hola! Te preparo un presupuesto cerrado. ¿Me cuentas qué vendes y cómo lo entregas?</p>
+                <p class="bubble bubble--me" style="--d:4">¡Genial! Te cuento.</p>
+              </div>
+              <div class="chat-input"><span>Escribe un mensaje</span><i></i></div>
+            </div>
+          </div>
+        </div>
+        <span class="island"></span>
+        <span class="gloss"></span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#inicio" aria-label="rgdevstudio, ir al inicio">rg<span>dev</span>studio</a>
+      <nav class="nav" aria-label="Principal">
+        <ul>
+          <li><a href="#trabajos">Trabajos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn--ink btn--sm" href="#contacto">Hablemos</a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <p class="giant" aria-hidden="true"><span class="giant-row">rgdev</span><span class="giant-row giant-row--b">studio</span></p>
+      <div class="hero-slot" aria-hidden="true"></div>
+      <p class="drag-hint" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4"/></svg>Arrastra para girar</p>
+
+      <div class="hero-foot container">
+        <h1 class="hero-title" id="hero-title" data-reveal>Tu negocio merece una web que esté <em>a su altura</em></h1>
+        <div class="hero-side" data-reveal>
+          <p class="hero-sub">Diseño y desarrollo landings y tiendas online a medida, sin plantillas y hablando siempre conmigo.</p>
+          <div class="hero-ctas">
+            <a class="btn btn--accent" href="#contacto">Hablemos de tu proyecto</a>
+            <a class="btn btn--line" href="#trabajos">Ver trabajos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRABAJOS ============ -->
+    <section class="works" id="trabajos" aria-labelledby="works-title">
+      <div class="container">
+        <header class="works-head">
+          <p class="kicker">Trabajos</p>
+          <h2 class="title" id="works-title" data-reveal>Algunos <em>proyectos</em></h2>
+          <p class="lead" data-reveal>Cada negocio es distinto, y cada web también.</p>
+        </header>
+
+        <article class="project" data-project="flor">
+          <div class="project-text">
+            <p class="project-num">01 / 03</p>
+            <h3 class="project-name" data-reveal>Le Petit Fleur</h3>
+            <p class="project-tags" data-reveal><span>Tienda online</span><span>Shopify</span><span>Floristería</span></p>
+            <dl class="project-case" data-reveal>
+              <div><dt>El reto</dt><dd>Le Petit Fleur es una floristería de Catarroja sin presencia online. Deborah, su dueña, no quería una web de escaparate: quería vender sus ramos por internet, con cobro online, y poder gestionarlo ella sola.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Una tienda en Shopify diseñada a medida a partir de los colores de su logo: el rosa de fondo y los tonos de sus tres tulipanes. Catálogo de ramos, pago online y un diseño elegante, a la altura de sus flores.</dd></div>
+              <div><dt>El resultado</dt><dd>[Completar tras el lanzamiento: primeros pedidos online, tiempo que ahorra Deborah, una frase suya.]</dd></div>
+            </dl>
+          </div>
+          <div class="project-visual">
+            <div class="mini-phone" role="img" aria-label="Vista en el móvil de la tienda online de Le Petit Fleur">
+              <div class="screen screen--flor" data-screen-id="flor">
+                <div class="screen-scroll">
+                  <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+                  <div class="fl-nav"><b>Le Petit Fleur</b><span class="burger"><i></i><i></i></span></div>
+                  <div class="fl-hero">
+                    <svg class="fl-tulips" viewBox="0 0 200 200" aria-hidden="true">
+                      <g fill="none" stroke-linecap="round">
+                        <path d="M64 200 C66 160 70 132 74 104" stroke="#5E7A55" stroke-width="3"/>
+                        <path d="M100 200 C100 150 100 116 100 80" stroke="#5E7A55" stroke-width="3"/>
+                        <path d="M138 200 C136 164 132 140 128 116" stroke="#5E7A55" stroke-width="3"/>
+                      </g>
+                      <path d="M74 106 C56 100 52 72 58 60 L66 72 L74 54 L82 72 L90 60 C96 72 92 100 74 106Z" fill="#E2486B"/>
+                      <path d="M100 82 C80 76 76 44 82 30 L91 44 L100 22 L109 44 L118 30 C124 44 120 76 100 82Z" fill="#F2B33D"/>
+                      <path d="M128 118 C110 112 106 84 112 72 L120 84 L128 66 L136 84 L144 72 C150 84 146 112 128 118Z" fill="#9A5BC9"/>
+                    </svg>
+                    <p class="fl-h">Flores frescas, a domicilio en el día</p>
+                    <span class="fl-btn">Ver ramos</span>
+                  </div>
+                  <p class="fl-sec">Ramos de temporada</p>
+                  <div class="fl-grid">
+                    <span class="fl-prod"><i style="--c1:#F4B8C4;--c2:#E2486B"></i><b>Ramo Primavera</b><em>35 €</em></span>
+                    <span class="fl-prod"><i style="--c1:#F9D98B;--c2:#F2B33D"></i><b>Girasoles</b><em>29 €</em></span>
+                    <span class="fl-prod"><i style="--c1:#D8BCEB;--c2:#9A5BC9"></i><b>Lavanda</b><em>32 €</em></span>
+                    <span class="fl-prod"><i style="--c1:#CFE3C6;--c2:#6E9A63"></i><b>Verdes</b><em>24 €</em></span>
+                    <span class="fl-prod"><i style="--c1:#FBD3C3;--c2:#E8866A"></i><b>Peonías</b><em>42 €</em></span>
+                    <span class="fl-prod"><i style="--c1:#F6E7EA;--c2:#D9A3AE"></i><b>Novia</b><em>60 €</em></span>
+                  </div>
+                  <div class="fl-foot"><b>Le Petit Fleur</b><span>Catarroja · Valencia</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="cafe">
+          <div class="project-text">
+            <p class="project-num">02 / 03</p>
+            <h3 class="project-name" data-reveal>Molí Café</h3>
+            <p class="project-tags" data-reveal><span>Landing</span><span class="tag-concept">Concepto</span><span>Cafetería</span></p>
+            <dl class="project-case" data-reveal>
+              <div><dt>El reto</dt><dd>Una cafetería de barrio que se llena por recomendación pero casi no aparece en Google. La gente busca horario, carta y cómo llegar, y no lo encuentra.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Una landing de una sola página: carta visible sin PDFs, horario y mapa a un toque y botón para reservar mesa por WhatsApp. Pensada para leerse en el móvil, de pie en la calle.</dd></div>
+              <div><dt>El resultado</dt><dd>Concepto de diseño. Muestra cómo una web sencilla responde en segundos a lo que un cliente busca antes de entrar.</dd></div>
+            </dl>
+          </div>
+          <div class="project-visual">
+            <div class="mini-phone" role="img" aria-label="Vista en el móvil del concepto de landing para Molí Café">
+              <div class="screen screen--cafe" data-screen-id="cafe">
+                <div class="screen-scroll">
+                  <div class="sb sb--dark"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+                  <div class="mc-top"><b>Molí</b><span>Café de barrio · desde las 7:30</span></div>
+                  <svg class="mc-cup" viewBox="0 0 200 160" aria-hidden="true">
+                    <g fill="none" stroke="#E7D6BC" stroke-width="3" stroke-linecap="round">
+                      <ellipse cx="94" cy="80" rx="56" ry="13"/>
+                      <path d="M38 80 C40 118 62 140 94 140 C126 140 148 118 150 80"/>
+                      <path d="M149 92 C176 90 178 120 148 120"/>
+                      <path d="M80 60 C72 48 90 40 82 26" opacity=".6"/>
+                      <path d="M98 62 C90 48 108 38 100 20" opacity=".6"/>
+                    </g>
+                    <ellipse cx="94" cy="80" rx="46" ry="9" fill="#6B3B22"/>
+                  </svg>
+                  <span class="mc-btn">Reservar mesa</span>
+                  <p class="mc-sec">La carta</p>
+                  <ul class="mc-menu">
+                    <li><b>Espresso</b><s></s><em>1,40</em></li>
+                    <li><b>Cortado</b><s></s><em>1,60</em></li>
+                    <li><b>Flat white</b><s></s><em>2,60</em></li>
+                    <li><b>Tostada del día</b><s></s><em>3,90</em></li>
+                    <li><b>Bizcocho casero</b><s></s><em>2,80</em></li>
+                  </ul>
+                  <p class="mc-sec">Horario</p>
+                  <ul class="mc-hours"><li><b>Lun – Vie</b><span>7:30 – 20:00</span></li><li><b>Sáb</b><span>9:00 – 14:00</span></li></ul>
+                  <div class="mc-map"><i></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" data-project="moda">
+          <div class="project-text">
+            <p class="project-num">03 / 03</p>
+            <h3 class="project-name" data-reveal>Atelier Nou</h3>
+            <p class="project-tags" data-reveal><span>Tienda online</span><span class="tag-concept">Concepto</span><span>Moda</span></p>
+            <dl class="project-case" data-reveal>
+              <div><dt>El reto</dt><dd>Una tienda de moda local que vende por Instagram y gestiona los pedidos a mano, mensaje a mensaje.</dd></div>
+              <div><dt>Lo que hice</dt><dd>Una tienda en Shopify con estética editorial: fotos grandes, tallas y stock claros y un pago sencillo. Los pedidos llegan ordenados y se cobran al momento.</dd></div>
+              <div><dt>El resultado</dt><dd>Concepto de diseño. Explora cómo llevar la identidad de una tienda física a internet sin que parezca una plantilla.</dd></div>
+            </dl>
+          </div>
+          <div class="project-visual">
+            <div class="mini-phone" role="img" aria-label="Vista en el móvil del concepto de tienda online para Atelier Nou">
+              <div class="screen screen--moda" data-screen-id="moda">
+                <div class="screen-scroll">
+                  <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+                  <div class="mn-nav"><b>ATELIER NOU</b><span>Cesta 1</span></div>
+                  <div class="mn-hero"><i></i><p>Nueva colección</p></div>
+                  <p class="mn-sec">Lo más nuevo</p>
+                  <div class="mn-grid">
+                    <span class="mn-item"><i style="--c1:#B49673;--c2:#8F7352"></i><b>Abrigo lana</b><em>129 €</em></span>
+                    <span class="mn-item"><i style="--c1:#9BA284;--c2:#5F6A4A"></i><b>Camisa lino</b><em>59 €</em></span>
+                    <span class="mn-item"><i style="--c1:#3B3B3B;--c2:#121212"></i><b>Pantalón recto</b><em>79 €</em></span>
+                    <span class="mn-item"><i style="--c1:#D6C8B6;--c2:#B3A28C"></i><b>Punto crudo</b><em>69 €</em></span>
+                  </div>
+                  <span class="mn-btn">Ver todo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="section services" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Servicios</p>
+          <h2 class="title" id="services-title" data-reveal>¿Qué <em>necesitas</em>?</h2>
+        </header>
+        <div class="services-grid">
+          <div class="services-slot" aria-hidden="true"></div>
+          <article class="service" data-reveal data-svc="svc-landing">
+            <p class="service-time">1–2 semanas</p>
+            <h3 class="service-name">Landing</h3>
+            <p class="service-desc">Una página clara y bonita para presentar tu negocio y que te contacten. Ideal si empiezas o si tu web actual no te trae clientes.</p>
+            <p class="service-price"><small>Desde</small> [precio] €</p>
+            <a class="service-link" href="#contacto" data-service="Landing">Pedir presupuesto <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service service--feature" data-reveal data-svc="svc-tienda">
+            <p class="service-time">3–5 semanas</p>
+            <h3 class="service-name">Tienda online</h3>
+            <p class="service-desc">Vende tus productos por internet con una tienda en Shopify diseñada a medida. Te la dejo lista para vender y te enseño a gestionarla tú solo.</p>
+            <p class="service-price"><small>Desde</small> [precio] €</p>
+            <a class="service-link" href="#contacto" data-service="Tienda">Pedir presupuesto <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="service" data-reveal data-svc="svc-mant">
+            <p class="service-time">Cada mes</p>
+            <h3 class="service-name">Mantenimiento</h3>
+            <p class="service-desc">Me encargo de que tu web siga funcionando, actualizada y segura. Si necesitas un cambio, me escribes y listo.</p>
+            <p class="service-price">[precio] € <small>/ mes</small></p>
+            <a class="service-link" href="#contacto" data-service="Otro">Preguntar <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESO ============ -->
+    <section class="section process" id="proceso" aria-labelledby="process-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Proceso</p>
+          <h2 class="title" id="process-title" data-reveal>Así <em>trabajamos</em></h2>
+        </header>
+        <div class="process-track">
+          <div class="process-line" aria-hidden="true"><i></i></div>
+          <ol class="steps">
+            <li class="step" data-reveal><span class="step-num">1</span><h3>Hablamos</h3><p>Me cuentas tu negocio y qué necesitas. Sin compromiso.</p></li>
+            <li class="step" data-reveal><span class="step-num">2</span><h3>Te propongo</h3><p>Recibes un presupuesto claro, con plazos y lo que incluye.</p></li>
+            <li class="step" data-reveal><span class="step-num">3</span><h3>Diseño y desarrollo</h3><p>Te enseño avances para que opines antes de seguir.</p></li>
+            <li class="step" data-reveal><span class="step-num">4</span><h3>Lanzamos</h3><p>Publicamos la web y te explico cómo usarla.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="section about" id="sobre-mi" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="about-photo" data-reveal>
+          <!--
+            SUSTITUIR por tu foto real (~900x1125, WebP/AVIF, < 120 KB):
+            <img src="/img/foto.webp" width="900" height="1125" loading="lazy" decoding="async" alt="[Tu nombre], fundador de rgdevstudio">
+          -->
+          <div class="photo-placeholder" role="img" aria-label="Espacio para la foto de [tu nombre]"><span>rg</span><small>Tu foto aquí</small></div>
+        </figure>
+        <div class="about-text">
+          <p class="kicker">Sobre mí</p>
+          <h2 class="title" id="about-title" data-reveal>Hola, soy <em>[tu nombre]</em></h2>
+          <p class="about-lead" data-reveal>Soy programador y diseño webs para negocios. Me gusta crear webs que, además de verse bien, funcionen: que carguen rápido, que se entiendan y que consigan clientes.</p>
+          <p class="about-body" data-reveal>Con rgdevstudio trabajo directamente con cada cliente, sin intermediarios. Hablas conmigo desde el primer día hasta el lanzamiento.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <header class="section-head">
+          <p class="kicker">Preguntas</p>
+          <h2 class="title" id="faq-title" data-reveal>Preguntas <em>frecuentes</em></h2>
+        </header>
+        <div class="faq-list">
+          <details class="faq-item"><summary><span>¿Cuánto cuesta una web?</span><i aria-hidden="true"></i></summary><div class="faq-answer"><p>Depende de lo que necesites. La landing empieza en [precio] € y la tienda online en [precio] €. Te doy un presupuesto cerrado antes de empezar.</p></div></details>
+          <details class="faq-item"><summary><span>¿Cuánto se tarda?</span><i aria-hidden="true"></i></summary><div class="faq-answer"><p>Una landing, 1–2 semanas. Una tienda, 3–5 semanas.</p></div></details>
+          <details class="faq-item"><summary><span>¿Podré cambiar cosas yo mismo?</span><i aria-hidden="true"></i></summary><div class="faq-answer"><p>Sí. Te dejo la web preparada y te enseño a editar lo básico.</p></div></details>
+          <details class="faq-item"><summary><span>¿Qué pasa con el dominio y el hosting?</span><i aria-hidden="true"></i></summary><div class="faq-answer"><p>Te ayudo a contratarlos. Todo queda a tu nombre.</p></div></details>
+          <details class="faq-item"><summary><span>¿Y si no tengo fotos ni textos?</span><i aria-hidden="true"></i></summary><div class="faq-answer"><p>Te ayudo con los textos y te oriento con las fotos.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-main">
+          <p class="kicker">Contacto</p>
+          <h2 class="title" id="contact-title" data-reveal>¿Hablamos de tu <em>proyecto</em>?</h2>
+          <p class="lead" data-reveal>Cuéntame qué necesitas y te respondo en menos de 24 horas.</p>
+
+          <form class="form" name="contacto" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field" novalidate data-reveal>
+            <input type="hidden" name="form-name" value="contacto">
+            <p class="hp" aria-hidden="true"><label>No rellenes esto: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+            <div class="form-row">
+              <div class="field">
+                <label for="f-nombre">Nombre</label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="e-nombre">
+                <p class="field-error" id="e-nombre" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="f-negocio">Negocio <span class="opt">(opcional)</span></label>
+                <input id="f-negocio" name="negocio" type="text" autocomplete="organization">
+              </div>
+            </div>
+            <fieldset class="choices">
+              <legend>¿Qué necesitas?</legend>
+              <div class="choices-row">
+                <label class="choice"><input type="radio" name="necesito" value="Landing" id="c-landing"><span>Landing</span></label>
+                <label class="choice"><input type="radio" name="necesito" value="Tienda" id="c-tienda"><span>Tienda online</span></label>
+                <label class="choice"><input type="radio" name="necesito" value="Otro" id="c-otro"><span>Otro</span></label>
+              </div>
+            </fieldset>
+            <div class="field">
+              <label for="f-contacto">Email o teléfono</label>
+              <input id="f-contacto" name="contacto" type="text" inputmode="email" autocomplete="email" required aria-describedby="e-contacto">
+              <p class="field-error" id="e-contacto" role="alert"></p>
+            </div>
+            <div class="field">
+              <label for="f-mensaje">Cuéntame un poco más <span class="opt">(opcional)</span></label>
+              <textarea id="f-mensaje" name="mensaje" rows="3"></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn--accent btn--submit" type="submit"><span class="submit-label">Enviar</span></button>
+              <!-- CAMBIAR: número en formato internacional sin + ni espacios -->
+              <a class="btn btn--line-light" href="https://wa.me/34000000000?text=Hola%2C%20quiero%20hablar%20de%20una%20web%20para%20mi%20negocio" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
+            </div>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+          <p class="contact-mail">O al email <a href="mailto:[tu-email]">[tu-email]</a></p>
+        </div>
+        <div class="contact-slot" aria-hidden="true"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-word" aria-hidden="true">rg<span>dev</span>studio</p>
+      <div class="footer-row">
+        <p>Designed &amp; Developed by rgdevstudio · © <span data-year>2026</span></p>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/[tu-usuario]" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:[tu-email]">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

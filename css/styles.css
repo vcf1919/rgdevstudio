@@ -68,8 +68,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; font-varia
   padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
 }
 
-.kicker { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 12px; }
-.kicker::before { content: ""; width: 24px; height: 1px; background: currentColor; }
+.kicker { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
 .title {
   font-size: var(--fs-title); font-weight: 800; line-height: 0.92; letter-spacing: -0.03em;
   font-variation-settings: "wdth" 72; text-transform: uppercase; text-wrap: balance;

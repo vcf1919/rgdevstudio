@@ -67,6 +67,17 @@
       <div class="phone-front">
         <div class="phone-screen">
           <!-- Las pantallas de los proyectos se clonan aquí desde JS -->
+          <div class="screen screen--build" data-screen-id="build">
+            <div class="screen-scroll">
+              <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
+              <span class="bd-tag">diseñando…</span>
+              <span class="bd-blk bd-b1"></span><span class="bd-blk bd-b2"></span><span class="bd-blk bd-b3"></span><span class="bd-blk bd-b4"></span><span class="bd-blk bd-b5"></span>
+              <p class="bd-txt bd-t1">Tu negocio, explicado en una frase.</p>
+              <p class="bd-txt bd-t2">Pide cita</p>
+              <p class="bd-txt bd-t3">¿Hablamos?</p>
+              <p class="bd-txt bd-t4"><span>WhatsApp</span><span>Llamar</span></p>
+            </div>
+          </div>
           <div class="screen screen--svc screen--landing" data-screen-id="svc-landing">
             <div class="screen-scroll">
               <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
@@ -184,35 +195,27 @@
             </dl>
           </div>
           <div class="project-visual">
-            <div class="mini-phone" role="img" aria-label="Vista en el móvil de la tienda online de Le Petit Fleur">
-              <div class="screen screen--flor" data-screen-id="flor">
+            <div class="mini-phone" role="img" aria-label="Portada animada de Le Petit Fleur: tres tulipanes que se dibujan y florecen sobre fondo rosa">
+              <div class="screen screen--fcover" data-screen-id="flor">
                 <div class="screen-scroll">
                   <div class="sb"><span>9:41</span><span class="sb-icons"><i></i><i></i><i></i></span></div>
-                  <div class="fl-nav"><b>Le Petit Fleur</b><span class="burger"><i></i><i></i></span></div>
-                  <div class="fl-hero">
-                    <svg class="fl-tulips" viewBox="0 0 200 200" aria-hidden="true">
-                      <g fill="none" stroke-linecap="round">
-                        <path d="M64 200 C66 160 70 132 74 104" stroke="#5E7A55" stroke-width="3"/>
-                        <path d="M100 200 C100 150 100 116 100 80" stroke="#5E7A55" stroke-width="3"/>
-                        <path d="M138 200 C136 164 132 140 128 116" stroke="#5E7A55" stroke-width="3"/>
-                      </g>
-                      <path d="M74 106 C56 100 52 72 58 60 L66 72 L74 54 L82 72 L90 60 C96 72 92 100 74 106Z" fill="#E2486B"/>
-                      <path d="M100 82 C80 76 76 44 82 30 L91 44 L100 22 L109 44 L118 30 C124 44 120 76 100 82Z" fill="#F2B33D"/>
-                      <path d="M128 118 C110 112 106 84 112 72 L120 84 L128 66 L136 84 L144 72 C150 84 146 112 128 118Z" fill="#9A5BC9"/>
-                    </svg>
-                    <p class="fl-h">Flores frescas, a domicilio en el día</p>
-                    <span class="fl-btn">Ver ramos</span>
-                  </div>
-                  <p class="fl-sec">Ramos de temporada</p>
-                  <div class="fl-grid">
-                    <span class="fl-prod"><i style="--c1:#F4B8C4;--c2:#E2486B"></i><b>Ramo Primavera</b><em>35 €</em></span>
-                    <span class="fl-prod"><i style="--c1:#F9D98B;--c2:#F2B33D"></i><b>Girasoles</b><em>29 €</em></span>
-                    <span class="fl-prod"><i style="--c1:#D8BCEB;--c2:#9A5BC9"></i><b>Lavanda</b><em>32 €</em></span>
-                    <span class="fl-prod"><i style="--c1:#CFE3C6;--c2:#6E9A63"></i><b>Verdes</b><em>24 €</em></span>
-                    <span class="fl-prod"><i style="--c1:#FBD3C3;--c2:#E8866A"></i><b>Peonías</b><em>42 €</em></span>
-                    <span class="fl-prod"><i style="--c1:#F6E7EA;--c2:#D9A3AE"></i><b>Novia</b><em>60 €</em></span>
-                  </div>
-                  <div class="fl-foot"><b>Le Petit Fleur</b><span>Catarroja · Valencia</span></div>
+                  <p class="fc-label">Tienda online · Shopify</p>
+                  <svg class="fc-tulips" viewBox="0 0 200 230" aria-hidden="true">
+                    <g class="fc-stems" fill="none" stroke="#5E7A55" stroke-width="2.4" stroke-linecap="round">
+                      <path pathLength="1" d="M64 230 C66 186 70 150 74 112"/>
+                      <path pathLength="1" d="M100 230 C100 172 100 130 100 88"/>
+                      <path pathLength="1" d="M138 230 C136 190 132 160 128 126"/>
+                      <path pathLength="1" d="M100 182 C82 172 72 186 78 206"/>
+                    </g>
+                    <g class="fc-flowers" stroke-width="2.4" stroke-linejoin="round">
+                      <path class="fc-f1" pathLength="1" d="M74 114 C54 108 50 78 56 64 L65 78 L74 58 L83 78 L92 64 C98 78 94 108 74 114Z"/>
+                      <path class="fc-f2" pathLength="1" d="M100 90 C78 84 74 50 80 34 L90 50 L100 26 L110 50 L120 34 C126 50 122 84 100 90Z"/>
+                      <path class="fc-f3" pathLength="1" d="M128 128 C108 122 104 92 110 78 L119 92 L128 72 L137 92 L146 78 C152 92 148 122 128 128Z"/>
+                    </g>
+                  </svg>
+                  <p class="fc-name">Le Petit Fleur</p>
+                  <p class="fc-place">Floristería en Catarroja</p>
+                  <span class="fc-btn">Ver ramos <b>→</b></span>
                 </div>
               </div>
             </div>

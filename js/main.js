@@ -106,7 +106,7 @@
     const maxScroll = Math.max(0, d.documentElement.scrollHeight - vh);
     const hs = pageRect(heroSlot);
     const heroSc = Math.min(hs.height / PH, (hs.width + 40) / PW, 1.1);
-    const heroSt = { s: 0, x: hs.cx - vw / 2, y: hs.cy - vh / 2, sc: heroSc, rx: 8, ry: -20, rz: 4, screen: 'flor', float: 1, inter: 1 };
+    const heroSt = { s: 0, x: hs.cx - vw / 2, y: hs.cy - vh / 2, sc: heroSc, rx: 8, ry: -20, rz: 4, screen: 'build', float: 1, inter: 1 };
 
     if (mode === 'static') {
       // El escenario va pegado al hero y se desplaza con la página
@@ -122,7 +122,7 @@
       const exitS = hero.offsetTop + hero.offsetHeight - vh * 0.55;
       const list = [
         heroSt,
-        { s: Math.max(exitS, 1), x: 0, y: -vh / 2 - PH * heroSc / 2 - 60, sc: heroSc * 0.9, rx: -14, ry: 520, rz: -14, screen: 'flor', float: 0, inter: 0 }
+        { s: Math.max(exitS, 1), x: 0, y: -vh / 2 - PH * heroSc / 2 - 60, sc: heroSc * 0.9, rx: -14, ry: 520, rz: -14, screen: 'build', float: 0, inter: 0 }
       ];
       const slot = $('.services-slot');
       const grid = $('.services-grid');
@@ -318,7 +318,12 @@
     const screen = tg.screen;
     if (phone.dataset.screen !== screen) {
       phone.dataset.screen = screen;
-      Object.entries(phoneScreens).forEach(([id, el]) => el.classList.toggle('is-on', id === screen));
+      Object.entries(phoneScreens).forEach(([id, el]) => {
+        const on = id === screen;
+        el.classList.toggle('is-on', on);
+        // Cada pantalla animada empieza desde el principio al aparecer
+        if (on && el.getAnimations) el.getAnimations({ subtree: true }).forEach(a => { a.currentTime = 0; });
+      });
     }
 
     // Halo de luz detrás del móvil
